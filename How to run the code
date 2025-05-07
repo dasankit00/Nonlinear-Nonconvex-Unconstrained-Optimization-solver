@@ -1,0 +1,50 @@
+How to run the code: 
+
+
+Calling the optsolver function:
+
+
+>> optsolver('problem',x0,'algorithm',i);
+
+
+Here the 'problem' and possible initial value 'x0' can be: 
+
+1. rosenbrock: [2;4]
+2. leastsquares: [3;-2;-5;6]
+3. quadratic: [1;2;3;4;5;6;7;8;9;0]
+4. genhumps: [1;2;3;4;5]
+
+The algorithm can be: 
+
+1. steepestbacktrack
+2. steepestwolfe
+3. newtonbacktrack
+4. newtonwolfe
+5. bfgsbacktrack
+6. bfgswolfe
+7. trustregioncg
+8. sr1trustregioncg
+
+'i' is a structure we can leave it as it is to use the default values, or can update the default values like. 
+
+>> i.maxiter = 10000
+
+which will change the default maxiter to 1000 to 10000. 
+
+
+Examples: 
+
+>> optsolver('rosenbrock',[2;4],'steepestbacktrack',i);
+>> optsolver('leastsquares',[3;-2;-5;6],'steepestbacktrack',i);
+
+
+
+Calling the runner function: 
+
+>> runner('problem', x0);
+
+It will run all the algorithm listed above for a given problem and a initial point. 
+
+Examples: 
+
+>> runner('leastsquares', [2;-1;3;5]);
