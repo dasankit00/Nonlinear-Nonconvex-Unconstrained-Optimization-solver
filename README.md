@@ -1,2 +1,2 @@
-# Nonlinear-Nonconvex-Unconstrained-Optimization-solver
+# Nonlinear Nonconvex Unconstrained Optimization solver MATLAB code.
 It is a Nonlinear Nonconvex Unconstrained Optimization solver. It has 8 algorithms: steepest descent backtrack, steepest descent wolfe, Newton backtrack, Newton Wolfe, BFGS backtrack, BFGS wolfe, trust region CG, SR1 trust region CG. This repository already has 4 test problem to test on (Rosenrock, Leastsquares, Genhumps, Quadratic).
